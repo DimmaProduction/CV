@@ -1,19 +1,8 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.App{
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,15 +13,216 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  width: 150%;
+  position: relative;
+  left: -25%;
+
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 1.3em;
+  text-align: left;
+
+  letter-spacing: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header_name {
+  letter-spacing: 6px;
+  /* font-size: 2em; */
+  font-size: 190%;
+  text-align: center;
+    /* background-color: rgb(192, 48, 48); */
+  margin-bottom: -5%;
 }
+
+.header_profession {
+    text-align: right;
+    /* background-color: rgb(192, 48, 48); */
+}
+
+.header_line {
+    text-align: right;
+    /* background-color: rgb(80, 80, 80); */
+    background-color: rgb(192, 48, 48);
+    width: 100%;
+    height: 1.4em;
+    margin-top: -9%;
+}
+
+.header_block {
+    text-align: right;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 1em;
+    /* margin-top: -5%; */
+}
+
+
+body {
+  font-family: 'Source Code Pro', sans-serif;
+  margin: 0;
+}
+
+.wrap {
+  /* padding: 10% 20%; */
+  padding: 30px 10%;
+  /* background-color: #fff; */
+}
+
+.block1 {
+    margin: 2em 0.4em;
+    display: inline-table;
+    width: 31%;
+    /* background-color: rgb(146, 142, 142); */
+}
+
+.block2 {
+    margin: 2em 0.4em;
+    display: inline-table;
+    width: 48%;
+}
+
+.block3 {
+  margin: 2em 0.4em;
+  margin-right: -20em;
+  margin-top: -5em;
+  text-align: right;
+
+  width: 48%;
+  height: 4em;
+}
+/* .block h2, .block p {
+  margin: 0.3em auto;
+} */
+
+h2 {
+  margin-top: 0.5em;
+  color: rgb(250, 50, 50);
+  /* color: rgb(192, 48, 48); */
+}
+
+.nameOfBlock {
+  font-size: 1.15em;
+}
+
+.probel {
+  /* width: 20px; */
+  /* height: 20px;s */
+  /* display:inline-block; */
+  /* background-color: #fff; */
+}
+
+h2 first-child {
+  margin-top: 0;
+}
+
+/* // Now that is interesting */
+.underlined {
+  color: rgb(255, 255, 255);
+
+  /* flex: 1; */
+  font-size: 0.7em;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, grey 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background .5s;
+}
+.underlined:hover {
+    background-size: 100% 100%;
+  }
+  .underlined--thin {
+    background-image: linear-gradient(to right, rgb(192, 48, 48), white 100%);
+  }
+  .underlined--thick {
+    background-position: 0 -0.1em;
+  }
+  .underlined--offset {
+    background-position: 0 0.2em;
+    /* //didn't find another solution than mask the underline shape by a box shadow with the same color than the bg */
+    box-shadow: inset 0 -.5em 0 0 #282c34;
+    background-image: linear-gradient(to right, rgb(192, 48, 48), #282c34 100%);
+
+  }
+  .underlined--gradient {
+    background-position: 0 -0.1em;
+    background-image: linear-gradient(to right, yellow 0, lightgreen 100%);
+  }
+  .underlined--reverse {
+    background-position: 100% -0.1em;
+    transition: background 1s; 
+    /* //yep, that's a long link */
+    background-image: linear-gradient(to right, rgb(182, 182, 182) 0, rgb(179, 41, 41) 100%);
+  }
+
+  .metadata {
+      width: 95%;
+      text-align: left;
+      font-size: 1em;;
+  }
+
+  
+.metadata_up p {
+    margin-bottom: -10px;
+}
+
+.metadata_down p {
+    margin-top: -10px;
+}
+
+
+ 
+
+ .contact_linkedIn {
+  display: inline-block;
+
+  font-size: 1em;
+  letter-spacing: 2px;
+  margin-right: 1em;
+  margin-top: 1%;
+}
+
+  .blockOfContact {
+    margin-top: 1em;
+    vertical-align: middle;
+    background-color: grey;
+    height: 2em;
+}
+
+.right_contact {
+  text-align: right;
+}
+
+
+
+
+
+.footer {
+  border-top: white 1px solid;
+  width: 80%;
+}
+
+ .footer_text {
+   color: grey ;
+   font-size: 0.8em;
+   text-align: center;
+   display: inline-block;
+   margin: 1em 0;
+ }
+
+ .footer_text_left {
+   text-align: left;
+   position: absolute;
+   left: 10%;
+ }
+
+ .footer_text_center {
+  margin-left: 30%;
+}
+.footer_text_right {
+  text-align: right;
+  position: absolute;
+   right: 10%;
+}
+
